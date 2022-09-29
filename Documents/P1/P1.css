@@ -8,6 +8,7 @@ body {
 }
 
 section {
+    margin-bottom: 20px;
     border: 2px dashed black;
     padding: 10px;
 }
