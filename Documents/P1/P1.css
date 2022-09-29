@@ -1,0 +1,13 @@
+html {
+    background-color: peachpuff;
+}
+
+body {
+    width: 70%;
+    margin: 0 auto;
+}
+
+section {
+    border: 2px dashed black;
+    padding: 10px;
+}
