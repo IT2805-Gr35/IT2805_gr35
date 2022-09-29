@@ -4,6 +4,7 @@ html {
 
 body {
     width: 70%;
+    max-width: 50em;
     margin: 0 auto;
 }
 
