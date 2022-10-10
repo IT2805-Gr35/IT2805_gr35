@@ -1,0 +1,15 @@
+html {
+    background-color: peachpuff;
+}
+
+body {
+    width: 70%;
+    max-width: 50em;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 20px;
+    border: 2px dashed black;
+    padding: 10px;
+}
