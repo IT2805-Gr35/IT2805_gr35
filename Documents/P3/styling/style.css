@@ -14,6 +14,12 @@ html {
     background-color: var(--color-background);
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 header {
     background-color: var(--color-navbar);
     color: var(--color-text);
@@ -45,7 +51,7 @@ header {
     grid-column: 3;
     grid-row: 0;
     display: flex;
-    justify-content: flex-end
+    justify-content: flex-end;
 }
 
 .navbar ul {
@@ -61,4 +67,43 @@ header {
     color: var(--color-text);
     padding: 4px;
     font-size: 32px;
+}
+
+.main-container {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    flex: 1;
+}
+
+footer {
+    background-color: var(--color-navbar);
+    color: var(--color-text);
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-container img {
+    justify-self: start;
+    align-self: center;
+}
+
+.copyright {
+    justify-self: start;
+    align-self: center;
+}
+
+.social {
+    justify-self: end;
+    align-self: center;
+    margin-left: auto;
 }
