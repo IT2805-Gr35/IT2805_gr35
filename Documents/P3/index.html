@@ -10,11 +10,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="search()">
     <header>
         <div class="header-container">
             <div class="logo">CURRENT HARVEST</div>
-            <div class="search"></div>
+            <div class="search">
+                <input type="text" id="searchInput" onkeyup="search()" placeholder="Try searching for Chanterelle!">
+                
+                <ul id="searchUL">
+                    <li><a href="https://folk.ntnu.no/vebjorny/Documents/P2/P2_design_35.html">Chanterelle</a></li>
+                    <li><a href="https://snl.no/eple">Apple</a></li>
+                    <li><a href="https://snl.no/sitron">Lemon</a></li>
+                    <li><a href="https://snl.no/jordb%C3%A6r">Strawberry</a></li>
+                    <li><a href="#">Plum</a></li>
+                    <li><a href="#">Raspberry</a></li>
+                    <li><a href="#">Orange</a></li>
+                </ul>
+            </div>
             <div class="navbar">
                 <ul>
                     <li><a href="fruit.html">Fruit</a></li>
@@ -23,6 +35,7 @@
                 </ul>
             </div>
         </div>
+        <script src="scripts/search.js"></script>
     </header>
     <div class="main-container"></div>
     <footer></footer>
