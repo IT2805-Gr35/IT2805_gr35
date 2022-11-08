@@ -69,6 +69,7 @@ header {
     font-size: 32px;
 }
 
+<<<<<<< HEAD
 .main-container {
     width: 80%;
     margin-right: auto;
@@ -114,3 +115,13 @@ footer {
 
 
 /* Contact form section*/ 
+=======
+h1{
+    display: block;
+    text-align: center;
+    font-size: 4.5em;
+}
+
+
+
+>>>>>>> 8dda518 (info.html)
