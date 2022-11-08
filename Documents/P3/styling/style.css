@@ -69,7 +69,6 @@ header {
     font-size: 32px;
 }
 
-<<<<<<< HEAD
 .main-container {
     width: 80%;
     margin-right: auto;
@@ -115,13 +114,21 @@ footer {
 
 
 /* Contact form section*/ 
-=======
-h1{
-    display: block;
-    text-align: center;
-    font-size: 4.5em;
+
+/* Slideshow */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
 }
-
-
-
->>>>>>> 8dda518 (info.html)
+/* Slideshow */
