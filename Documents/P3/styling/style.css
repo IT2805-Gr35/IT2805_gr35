@@ -83,6 +83,11 @@ header {
     padding: 12px 20px 12px 40px; 
     border: 1px solid #ddd; 
     margin: 12px; 
+    border-radius: 4px;
+    /* Add search icon */
+    background-image: url("/Documents/P3/images/search_icon.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
   
   #searchUL {
@@ -94,7 +99,9 @@ header {
   }
   
   #searchUL li a {
+    /* Style each list element */
     border: 1px solid #ddd; 
+    margin: 12px;
     margin-top: -1px; 
     background-color: #f6f6f6; 
     padding: 12px; 
@@ -102,6 +109,9 @@ header {
     font-size: 18px; 
     color: black; 
     display: block; 
+    width: 90vw;
+    max-width: 435px;
+    border-radius: 4px;
   }
   
   #searchUL li a:hover:not(.header) {
