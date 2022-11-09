@@ -34,10 +34,12 @@ header {
 }
 
 .logo {
-    font-size: 48px;
+    font-size: 38px;
     font-weight: 600;
     grid-column: 1;
     grid-row: 0;
+    color: var(--color-text);
+    text-decoration: none;
 }
 
 .search {
@@ -60,13 +62,20 @@ header {
     padding: 0 10px;
     list-style: none;
     display: flex;
+    flex-flow: row nowrap;
 }
 
 .navbar ul a {
     text-decoration: none;
     color: var(--color-text);
-    padding: 4px;
-    font-size: 32px;
+    padding: 8px;
+    font-size: 28px;
+}
+
+.navbar ul a:hover {
+    color: var(--color-navbar);
+    background-color: var(--color-text);
+    border-radius: 40px;
 }
 
 .main-container {
