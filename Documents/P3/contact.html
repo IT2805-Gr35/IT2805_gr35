@@ -10,39 +10,45 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
 </head>
-<body onload="search()">
+<body>
     <header>
         <div class="header-container">
             <div class="logo">CURRENT HARVEST</div>
-            <div class="search">
-                <input type="text" id="searchInput" onkeyup="search()" placeholder="Try searching for Chanterelle!">
-                <ul id="searchUL">
-                    <li><a href="https://folk.ntnu.no/vebjorny/Documents/P2/P2_design_35.html">Chanterelle</a></li>
-                    <li><a href="https://snl.no/eple">Apple</a></li>
-                    <li><a href="https://snl.no/sitron">Lemon</a></li>
-                    <li><a href="https://snl.no/jordb%C3%A6r">Strawberry</a></li>
-                    <li><a href="#">Plum</a></li>
-                    <li><a href="#">Raspberry</a></li>
-                    <li><a href="#">Orange</a></li>
-                </ul>
-            </div>
+            <div class="search"></div>
             <div class="navbar">
                 <ul>
                     <li><a href="fruit.html">Fruit</a></li>
                     <li><a href="berries.html">Berries</a></li>
                     <li><a href="mushrooms.html">Mushrooms</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="">Laws</a></li>
-                    <li><a href="contact.html">Request info</a></li>
                 </ul>
             </div>
         </div>
-        
     </header>
     <div class="main-container"></div>
+        <h1>Request information</h1>
+        <div id="form_container">
+            <form id="contact_form">
+                
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your full name..." required>
+                
+                <label for="email">E-mail</label>
+                <input type="text" id="email" name="email" placeholder="Examplehero@example.com..." required>
+
+                <label for="phonenum">Phone number</label>
+                <input type="text" id="phonenum" name="phonenum">
+                
+                <label for="message">Your message</label>
+                <input type="text" id="message" name="message">
+
+                <label for="myfile">Attachments</label>
+                <input type="file" id="myfile" name="myfile" multiple>
+
+                <input type="submit" value="Submit contact form">
+            </form>
     <footer>
         <div class="footer-container">
-            <img src="Images/facebook_cover_photo_1.png" alt="" style="width: 200px;">
+            <img src="Images/facebook_cover_photo_1.png" alt="" style="width: 300px;">
             <div class="copyright">Copyright text</div>
             <div class="social">
                 <img src="Images/Instagram_Glyph_White 1.png" alt="" style="width: 50px;">
@@ -51,6 +57,5 @@
             </div>
         </div>
     </footer>
-  <script src="scripts/search.js"></script>
 </body>
 </html>
