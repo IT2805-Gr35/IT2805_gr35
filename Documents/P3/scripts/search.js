@@ -24,3 +24,5 @@ function search() {
     }
   }
 }
+
+// This is taken from w3schools https://www.w3schools.com/howto/howto_js_filter_lists.asp as well as some of the related styling in style.css

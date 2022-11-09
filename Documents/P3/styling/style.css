@@ -14,6 +14,12 @@ html {
     background-color: var(--color-background);
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 header {
     background-color: var(--color-navbar);
     color: var(--color-text);
@@ -30,10 +36,12 @@ header {
 }
 
 .logo {
-    font-size: 48px;
+    font-size: 38px;
     font-weight: 600;
     grid-column: 1;
     grid-row: 0;
+    color: var(--color-text);
+    text-decoration: none;
 }
 
 .search {
@@ -55,6 +63,7 @@ header {
     padding: 0 10px;
     list-style: none;
     display: flex;
+    flex-flow: row nowrap;
 }
 
 .navbar ul a {
@@ -117,3 +126,73 @@ header {
   #searchUL li a:hover:not(.header) {
     background-color: #eee; 
   }
+
+.navbar ul a:hover {
+    color: var(--color-navbar);
+    background-color: var(--color-text);
+    border-radius: 40px;
+}
+
+.main-container {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    flex: 1;
+}
+
+footer {
+    background-color: var(--color-navbar);
+    color: var(--color-text);
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-container img {
+    justify-self: start;
+    align-self: center;
+}
+
+.copyright {
+    justify-self: start;
+    align-self: center;
+}
+
+.social {
+    justify-self: end;
+    align-self: center;
+    margin-left: auto;
+}
+
+/* Contact form section*/ 
+
+
+
+
+/* Contact form section*/ 
+
+/* Slideshow */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+/* Slideshow */
