@@ -27,27 +27,28 @@
             </div>
         </div>
     </header>
-    <div class="main-container">
+    <div class="main-container" id="contact_main">
         <h1>Request information</h1>
+        <p>Any questions or suggestions? Want help identifying a species?
+            Feel free to send us a message, and we will follow up shortly!</p>
         <div id="form_container">
             <form action="contact.html" id="contact_form" onsubmit="submitform()">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your full name..." required><br>
                 
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Your full name..." required>
-                
-                <label for="email">E-mail</label>
-                <input type="text" id="email" name="email" placeholder="Examplehero@example.com..." required>
+                <label for="email">E-mail:</label>
+                <input type="text" id="email" name="email" placeholder="Examplehero@example.com..." required><br>
 
-                <label for="phonenum">Phone number</label>
-                <input type="text" id="phonenum" name="phonenum"><br>
+                <label for="phonenum">Phone number:</label>
+                <input type="tel" id="phonenum" name="phonenum" pattern="[0-9]{8}" placeholder="87654321" required><br>
                 
-                <label for="message">Your message</label>
-                <input type="text" id="message" name="message">
-
-                <label for="myfile">Attachments</label>
+                <label for="myfile">Attachments:</label>
                 <input type="file" id="myfile" name="myfile" multiple><br>
 
-                <input type="submit" id="btn" name ="btn" value="Submit contact form">
+                <label for="message">Your message:</label>
+                <input type="text" id="message" name="message" required><br>
+
+                <input type="submit" id="btn" name ="btn" value="Submit form">
             </form>
         </div> 
      </div>
