@@ -189,9 +189,38 @@ footer {
 /* fruit.html */
 
 /* Contact form section*/ 
+#contact_main h1{
+    text-align: center;
+    padding-top:1rem;
+}
 
+#contact_main p{
+    text-align: center;
+    margin-bottom:1rem;
+}
+#form_container{
+    text-align: center;
 
+}
+#contact_form {
+    width:70%;
+    margin: 3rem auto;
+    
+}
 
+#contact_form label{
+    display: inline-block;
+    width:30%;}
+
+#contact_form input{
+    display: inline-block;
+    width:40%;    
+}
+
+#contact_form input{
+    display: inline-block;
+    width:30%;    
+}
 
 /* Contact form section*/ 
 
