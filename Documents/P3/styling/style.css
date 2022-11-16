@@ -172,21 +172,48 @@ footer {
     margin-left: auto;
 }
 
-/* fruit.html */
-.list-container {
+/* berries.html */
+.list-wrapper {
     margin-right: auto;
     margin-left: auto;
-    width: 80%;
-    flex: 2;
-    background-color: aliceblue;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
 
 }
 
-.plant-list {
+.item-list {
     list-style-type: none;
-    background-color: aqua;
+    width: 100%;
 }
-/* fruit.html */
+
+.item {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px 5px 10px 5px;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    background-color: #ddd;
+}
+
+.item a {
+    align-self: flex-start;
+}
+
+.item a img {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 20px;
+}
+
+.item article {
+    padding-left: 10px;
+}
+
+/* berries.html */
 
 /* Contact form section*/ 
 #contact_main h1{
