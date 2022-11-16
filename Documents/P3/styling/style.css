@@ -287,6 +287,10 @@ footer {
 /* Slideshow */
 
 /* Infopage */
+#page {
+   
+}
+
 #infoHeader {
     text-align: center;
     font-size: 70px;
@@ -295,12 +299,13 @@ footer {
 
 #infoSub {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     margin-left: 60px;
     margin-right: 60px;
 }
 #infobox {
     width: 100%;
+    display: flex;
 }
 
 #languages {
@@ -311,22 +316,39 @@ footer {
     width: 100%;
     list-style: none;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
-#languages p {
+.type {
     float: right;
+    display: inline;
+}
+
+.lang {
+    display: inline;
 }
 
 #languages li{
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
+@media only screen and (max-width: 940px) {
+    .type {
+        display: block;
+        float: left;
+    }
+    .lang {
+        display: block;
+    }
+}
 #facts {
     float: right;
     width: 75%;
     margin-top: 20px;
     margin-right: 20px;
+    margin-left: 40px;
 }
 
 
