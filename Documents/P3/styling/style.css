@@ -173,18 +173,19 @@ footer {
 }
 
 /* berries.html */
-.list-wrapper {
+.list-container {
     margin-right: auto;
     margin-left: auto;
-    width: 90%;
+    width: 80%;
     display: flex;
     flex-direction: column;
-
+    justify-content: center;
+    flex: 1;
 }
 
 .item-list {
     list-style-type: none;
-    width: 100%;
+    width: 80%;
 }
 
 .item {
@@ -210,6 +211,10 @@ footer {
 
 .item article {
     padding-left: 10px;
+}
+
+.item:hover {
+    background-color: #ddb;
 }
 
 /* berries.html */
