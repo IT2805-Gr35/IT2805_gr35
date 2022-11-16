@@ -10,41 +10,43 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
 </head>
-<body onload="search()">
+<body>
     <header>
         <div class="header-container">
-            <div class="logo">CURRENT HARVEST</div>
-            <div class="search">
-                <input type="text" id="searchInput" onkeyup="search()" placeholder="Try searching for Chanterelle!">
-                <ul id="searchUL">
-                    <li><a href="https://folk.ntnu.no/vebjorny/Documents/P2/P2_design_35.html">Chanterelle</a></li>
-                    <li><a href="https://snl.no/eple">Apple</a></li>
-                    <li><a href="https://snl.no/sitron">Lemon</a></li>
-                    <li><a href="https://snl.no/jordb%C3%A6r">Strawberry</a></li>
-                    <li><a href="#">Plum</a></li>
-                    <li><a href="#">Raspberry</a></li>
-                    <li><a href="#">Orange</a></li>
-                </ul>
-            </div>
+            <div><a href="index.html"  class="logo">CURRENT HARVEST</a></div>
+            <div class="search"></div>
             <div class="navbar">
-                <ul id="navbar">
+                <ul>
                     <li><a href="fruit.html">Fruit</a></li>
                     <li><a href="berries.html">Berries</a></li>
                     <li><a href="mushrooms.html">Mushrooms</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="">About</a></li>
                     <li><a href="">Laws</a></li>
                     <li><a href="contact.html">Request info</a></li>
                 </ul>
             </div>
-            <div class="hamburger" onclick="hamburger(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
         </div>
-        
     </header>
-    <div class="main-container"></div>
+    <div class="main-container">
+        <div class="list-wrapper">
+            <ul class="item-list">
+                <li class="item">
+                    <a href="#"><img src="images/multe-list-img.jpg" alt="Cloudberry" height="100" width="100"/></a>
+                    <article>
+                        <h3>test</h3>
+                        <p>test paragraph</p>
+                    </article>
+                </li>
+                <li class="item">
+                    <a href="#"><img src="images/multe-list-img.jpg" alt="Cloudberry" height="100" width="100"/></a>
+                    <article>
+                        <h3>test</h3>
+                        <p>test paragraph</p>
+                    </article>
+                </li>
+            </ul>
+        </div>
+    </div>
     <footer>
         <div class="footer-container">
             <img src="Images/facebook_cover_photo_1.png" alt="" style="width: 200px;">
@@ -56,7 +58,5 @@
             </div>
         </div>
     </footer>
-  <script src="scripts/search.js"></script>
 </body>
-<script src="scripts/hamburger.js"></script>
 </html>

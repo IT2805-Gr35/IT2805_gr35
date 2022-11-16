@@ -20,35 +20,41 @@
                     <li><a href="fruit.html">Fruit</a></li>
                     <li><a href="berries.html">Berries</a></li>
                     <li><a href="mushrooms.html">Mushrooms</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="">Laws</a></li>
+                    <li><a href="contact.html">Request info</a></li>
                 </ul>
             </div>
         </div>
     </header>
-    <div class="main-container"></div>
+    <div class="main-container" id="contact_main">
         <h1>Request information</h1>
+        <p>Any questions or suggestions? Want help identifying a species?
+            Feel free to send us a message, and we will follow up shortly!</p>
         <div id="form_container">
-            <form id="contact_form">
+            <form action="contact.html" id="contact_form" onsubmit="submitform()">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your full name..." required><br>
                 
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Your full name..." required>
+                <label for="email">E-mail:</label>
+                <input type="text" id="email" name="email" placeholder="Examplehero@example.com..." required><br>
+
+                <label for="phonenum">Phone number:</label>
+                <input type="tel" id="phonenum" name="phonenum" pattern="[0-9]{8}" placeholder="87654321" required><br>
                 
-                <label for="email">E-mail</label>
-                <input type="text" id="email" name="email" placeholder="Examplehero@example.com..." required>
+                <label for="myfile">Attachments:</label>
+                <input type="file" id="myfile" name="myfile" multiple><br>
 
-                <label for="phonenum">Phone number</label>
-                <input type="text" id="phonenum" name="phonenum">
-                
-                <label for="message">Your message</label>
-                <input type="text" id="message" name="message">
+                <label for="message">Your message:</label>
+                <input type="text" id="message" name="message" required><br>
 
-                <label for="myfile">Attachments</label>
-                <input type="file" id="myfile" name="myfile" multiple>
-
-                <input type="submit" value="Submit contact form">
+                <input type="submit" id="btn" name ="btn" value="Submit form">
             </form>
+        </div> 
+     </div>
     <footer>
         <div class="footer-container">
-            <img src="Images/facebook_cover_photo_1.png" alt="" style="width: 300px;">
+            <img src="Images/facebook_cover_photo_1.png" alt="" style="width: 200px;">
             <div class="copyright">Copyright text</div>
             <div class="social">
                 <img src="Images/Instagram_Glyph_White 1.png" alt="" style="width: 50px;">
@@ -57,5 +63,6 @@
             </div>
         </div>
     </footer>
+    <script src="scripts/validate_form.js"></script>
 </body>
 </html>
