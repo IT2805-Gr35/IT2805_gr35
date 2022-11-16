@@ -286,8 +286,12 @@ footer {
     width: 100%;
 }
 
-#languages ul {
+#languages {
+    float: left;
     width: 20%;
+}
+#languages ul {
+    width: 100%;
     list-style: none;
     padding: 20px;
 }
@@ -301,8 +305,12 @@ footer {
     margin-bottom: 5px;
 }
 
-
-
+#facts {
+    float: right;
+    width: 75%;
+    margin-top: 20px;
+    margin-right: 20px;
+}
 
 
 /* Infopage */
