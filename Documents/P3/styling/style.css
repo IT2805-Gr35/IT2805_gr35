@@ -204,8 +204,7 @@ footer {
 }
 
 .item a img {
-    border-width: 1px;
-    border-style: solid;
+    border: 1px transparent;
     border-radius: 20px;
 }
 
