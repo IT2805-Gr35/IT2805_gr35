@@ -20,35 +20,49 @@
                     <li><a href="fruit.html">Fruit</a></li>
                     <li><a href="berries.html">Berries</a></li>
                     <li><a href="mushrooms.html">Mushrooms</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="">Laws</a></li>
+                    <li><a href="contact.html">Request info</a></li>
                 </ul>
             </div>
         </div>
     </header>
-    <div class="main-container"></div>
+    <div class="main-container" id="contact_main">
         <h1>Request information</h1>
+        <p>Any questions or suggestions? Want help identifying a species?<br>
+            Feel free to send us a message, and we will follow up shortly!</p>
         <div id="form_container">
-            <form id="contact_form">
-                
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Your full name..." required>
-                
-                <label for="email">E-mail</label>
-                <input type="text" id="email" name="email" placeholder="Examplehero@example.com..." required>
-
-                <label for="phonenum">Phone number</label>
-                <input type="text" id="phonenum" name="phonenum">
-                
-                <label for="message">Your message</label>
-                <input type="text" id="message" name="message">
-
-                <label for="myfile">Attachments</label>
-                <input type="file" id="myfile" name="myfile" multiple>
-
-                <input type="submit" value="Submit contact form">
+            <form method="post" id="contact_form" onsubmit="submitform()">
+                <div class="formline">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" placeholder="Your full name..." required><br>
+                </div>
+                <div class="formline">
+                    <label for="email">E-mail:</label><br>
+                    <input type="text" id="email" name="email" placeholder="Example@example.com..." required><br>
+                </div>
+                <div class="formline">
+                    <label for="phonenum">Phone number (optional):</label><br>
+                    <input type="tel" id="phonenum" name="phonenum" placeholder="87654321"><br>
+                </div>
+                <div class="formline">
+                    <label for="myfile">Attachments:</label><br>
+                    <input type="file" id="myfile" name="myfile" multiple><br>
+                </div>
+                <div class="formline">
+                    <label for="message" id="msglabel">Your message:</label><br>
+                    <textarea id="message" rows="4" cols="50" name="message" form="contact_form" placeholder="Enter text here..."></textarea><br>
+                </div>
+                <div class="formline">
+                <input type="submit" id="formbtn" name ="formbtn" value="Submit form">
+                </div>
             </form>
+            
+        </div> 
+     </div>
     <footer>
         <div class="footer-container">
-            <img src="Images/facebook_cover_photo_1.png" alt="" style="width: 300px;">
+            <img src="Images/facebook_cover_photo_1.png" alt="" style="width: 200px;">
             <div class="copyright">Copyright text</div>
             <div class="social">
                 <img src="Images/Instagram_Glyph_White 1.png" alt="" style="width: 50px;">
@@ -57,5 +71,6 @@
             </div>
         </div>
     </footer>
+    <script src="scripts/validate_form.js"></script>
 </body>
 </html>
