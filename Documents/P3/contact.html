@@ -29,27 +29,35 @@
     </header>
     <div class="main-container" id="contact_main">
         <h1>Request information</h1>
-        <p>Any questions or suggestions? Want help identifying a species?
+        <p>Any questions or suggestions? Want help identifying a species?<br>
             Feel free to send us a message, and we will follow up shortly!</p>
         <div id="form_container">
-            <form action="contact.html" id="contact_form" onsubmit="submitform()">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Your full name..." required><br>
-                
-                <label for="email">E-mail:</label>
-                <input type="text" id="email" name="email" placeholder="Examplehero@example.com..." required><br>
-
-                <label for="phonenum">Phone number:</label>
-                <input type="tel" id="phonenum" name="phonenum" pattern="[0-9]{8}" placeholder="87654321" required><br>
-                
-                <label for="myfile">Attachments:</label>
-                <input type="file" id="myfile" name="myfile" multiple><br>
-
-                <label for="message">Your message:</label>
-                <input type="text" id="message" name="message" required><br>
-
-                <input type="submit" id="btn" name ="btn" value="Submit form">
+            <form method="post" id="contact_form" onsubmit="submitform()">
+                <div class="formline">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" placeholder="Your full name..." required><br>
+                </div>
+                <div class="formline">
+                    <label for="email">E-mail:</label><br>
+                    <input type="text" id="email" name="email" placeholder="Example@example.com..." required><br>
+                </div>
+                <div class="formline">
+                    <label for="phonenum">Phone number (optional):</label><br>
+                    <input type="tel" id="phonenum" name="phonenum" placeholder="87654321"><br>
+                </div>
+                <div class="formline">
+                    <label for="myfile">Attachments:</label><br>
+                    <input type="file" id="myfile" name="myfile" multiple><br>
+                </div>
+                <div class="formline">
+                    <label for="message" id="msglabel">Your message:</label><br>
+                    <textarea id="message" rows="4" cols="50" name="message" form="contact_form" placeholder="Enter text here..."></textarea><br>
+                </div>
+                <div class="formline">
+                <input type="submit" id="formbtn" name ="formbtn" value="Submit form">
+                </div>
             </form>
+            
         </div> 
      </div>
     <footer>

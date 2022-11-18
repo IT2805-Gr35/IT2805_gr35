@@ -173,18 +173,19 @@ footer {
 }
 
 /* berries.html */
-.list-wrapper {
+.list-container {
     margin-right: auto;
     margin-left: auto;
-    width: 90%;
+    width: 80%;
     display: flex;
     flex-direction: column;
-
+    justify-content: center;
+    flex: 1;
 }
 
 .item-list {
     list-style-type: none;
-    width: 100%;
+    width: 80%;
 }
 
 .item {
@@ -204,8 +205,7 @@ footer {
 }
 
 .item a img {
-    border-width: 1px;
-    border-style: solid;
+    border: 1px transparent;
     border-radius: 20px;
 }
 
@@ -213,42 +213,59 @@ footer {
     padding-left: 10px;
 }
 
+.item:hover {
+    background-color: #ddb;
+}
+
 /* berries.html */
 
 /* Contact form section*/ 
 #contact_main h1{
     text-align: center;
-    padding-top:1rem;
+    margin:1rem;
 }
 
 #contact_main p{
     text-align: center;
-    margin-bottom:1rem;
+    margin:0rem;
 }
-#form_container{
-    text-align: center;
 
-}
+
 #contact_form {
-    width:70%;
-    margin: 3rem auto;
+    width:60%;
+    margin: 0.5rem auto;
+    text-align: center;
     
 }
+#contact_form input{
+    display: inline-block;
+    width:70%;
+    font-size: 1rem;}
 
 #contact_form label{
     display: inline-block;
-    width:30%;}
+    text-align: left;
+    width:70%;
+    font-size: 1rem;
+    padding:0.2rem 0;}
 
-#contact_form input{
+#message{
     display: inline-block;
-    width:40%;    
+    width:68%;
+    padding:0.5rem;
+    font-size: 1rem;
 }
 
-#contact_form input{
-    display: inline-block;
-    width:30%;    
+#formbtn {
+    border:none;
+    color:white;
+    background-color: rgb(0, 51, 255);
+    height:3rem;
+    font-size: 2rem;
 }
-
+.formline{
+    padding:1%;
+}
 /* Contact form section*/ 
 
 /* Slideshow */
@@ -278,12 +295,13 @@ footer {
 
 #infoSub {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     margin-left: 60px;
     margin-right: 60px;
 }
 #infobox {
     width: 100%;
+    display: flex;
 }
 
 #languages {
@@ -294,22 +312,39 @@ footer {
     width: 100%;
     list-style: none;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
-#languages p {
+.type {
     float: right;
+    display: inline;
+}
+
+.lang {
+    display: inline;
 }
 
 #languages li{
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
+@media only screen and (max-width: 940px) {
+    .type {
+        display: block;
+        float: left;
+    }
+    .lang {
+        display: block;
+    }
+}
 #facts {
     float: right;
     width: 75%;
     margin-top: 20px;
     margin-right: 20px;
+    margin-left: 40px;
 }
 
 
