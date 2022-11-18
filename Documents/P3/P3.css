@@ -1,0 +1,39 @@
+html {
+    background-color: peachpuff;
+}
+
+body {
+    width: 70%;
+    max-width: 50em;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 20px;
+    border: 2px dashed black;
+    padding: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+th {
+    border: 2px solid black;
+}
+
+td {
+    border: 1px solid black;
+}
+
+thead th:nth-child(1) {
+    width: 20%;
+}
+
+thead th:nth-child(2) {
+    width: 50%;
+}
+thead th:nth-child(3) {
+    width: 15%;
+}
