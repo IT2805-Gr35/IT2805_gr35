@@ -196,3 +196,70 @@ footer {
     to {opacity: 1}
 }
 /* Slideshow */
+
+/*About section*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    text-align: center;
+    margin: 50px auto 100px;
+    color: white;
+}
+
+
+.container {
+    display: flex;
+    gap: 2rem;
+    margin: 20px;
+}
+.child {
+    width: 100%;
+    min-height: 380px;
+    padding: 30px;
+    border-radius: 10px;
+    bottom: 0;
+    text-align: center;
+    cursor: pointer;
+    background: white;
+    box-shadow: 0 0 20px -15px black;
+    transition: 0.7s;  
+    line-height: 1.6; 
+}
+
+.logo{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 10px solid #cb8e46;
+    margin: -90px auto 0;
+    background: white;
+}
+
+.logo img{
+    width: 50px;
+    margin-top: 40px;
+}
+
+
+.child h2 {
+    height: 35px;
+    width: 80%;
+    background: white;
+    margin: 30px auto;
+    position: relative;
+    transition: 0.5s;
+}
+
+
+.child:hover{
+    transform: translateY(-50px);
+}
+
+.child:hover h2{
+    color:peru;
+}
+
+/*About section*/
