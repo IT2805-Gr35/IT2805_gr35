@@ -12,7 +12,7 @@ function listHandler() {
         const artHeader = document.createElement("h3");
         const artParagraph = document.createElement("p")
         listItem.className = "item";
-        a.href = items[i].href + ".html";
+        a.href = "info.html";
         Object.assign(img, {
             src: "Images/" + items[i].type + "/" + items[i].href + ".jpg",
             alt: items[i].name,
