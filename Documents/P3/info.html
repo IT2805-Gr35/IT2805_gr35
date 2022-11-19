@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple</title>
-    <link rel="stylesheet" href="../styling/style.css">
+    <link rel="stylesheet" href="styling/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="displayInfoPage()">
     <header></header>
     <div class="main-container" id="page">
         <h1 id="infoHeader">Apples</h1>
@@ -19,18 +19,18 @@
         <br>
         <div id="slideshow-container">
             <div class="slide fade">
-                <img src="../Images/Mushroom/chanterelle1.jpg" style="width:100%">
+                <img src="Images/Mushroom/chanterelle1.jpg" style="width:100%">
             </div>
             <div class="slide fade">
-                <img src="../Images/Mushroom/chanterelle2.jpg" style="width:100%">
+                <img src="Images/Mushroom/chanterelle2.jpg" style="width:100%">
             </div>
             <div class="slide fade">
-                <img src="../Images/Mushroom/chanterelle3.jpg" style="width:100%">
+                <img src="Images/Mushroom/chanterelle3.jpg" style="width:100%">
             </div>
         </div>
         <div id="infobox">
             <div id="languages">
-                <ul>
+                <ul id="languageList">
                     <h2>Languages</h2>
                     <hr>
                     <li> <p class="lang">Norwegian</p> <p class="type">Epler</p></li> 
@@ -75,8 +75,10 @@
 
 
     <footer></footer>
-    <script src="../scripts/slideshow.js"></script>
-    <script src="../scripts/search.js"></script>
-    <script src="../scripts/inSeason.js"></script>
+    <script src="scripts/ItemArray.js"></script>
+    <script src="scripts/slideshow.js"></script>
+    <script src="scripts/search.js"></script>
+    <script src="scripts/inSeason.js"></script>
+    <script src="scripts/pushContent.js"></script>
 </body>
 </html>
