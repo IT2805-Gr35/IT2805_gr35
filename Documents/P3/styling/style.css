@@ -351,16 +351,16 @@ footer {
 
 /* Infopage */
 #infoHeader {
-    text-align: center;
-    font-size: 70px;
-    margin-top: 20px;
+    text-align: center !important;
+    font-size: 70px !important;
+    margin-top: 20px !important;
 }
 
 #infoSub {
     text-align: center;
     margin-bottom: 20px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 #infobox {
     width: 100%;
@@ -393,6 +393,10 @@ footer {
     margin-bottom: 10px;
 }
 
+#languages h2 {
+    margin-bottom: 5px;
+}
+
 @media only screen and (max-width: 940px) {
     .type {
         display: block;
@@ -408,7 +412,17 @@ footer {
     margin-top: 20px;
     margin-right: 20px;
     margin-left: 40px;
+    padding: 40px;
+    background-color: #ce832e;
+    box-shadow: 7px 7px 9px 9px rgba(66, 63, 63, 0.667);
+    margin-bottom: 20px;
 }
-
+#facts h2 {
+    margin-bottom: 3px;
+}
+#facts h3 {
+    text-decoration: underline;
+    margin: 3px;
+}
 
 /* Infopage */
