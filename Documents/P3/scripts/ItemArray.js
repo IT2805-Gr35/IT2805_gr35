@@ -12,7 +12,12 @@ const items =
 {name: "Leccinum", href: "Leccinum", startDate: 08-01, endDate: 10-05, description: "tbd", type: "Mushroom"},
 {name: "Strawberry", href: "Strawberry", startDate: 08-01, endDate: 10-05, description: "tbd", type: "Berry"},
 {name: "Raspberry", href: "Raspberry", startDate: 08-01, endDate: 10-05, description: "tbd", type: "Berry"},
-{name: "Blueberry", href: "Apple", startDate: 08-01, endDate: 10-05, description: "tbd", type: "Berry"},
+{name: "Blueberry", href: "Blueberry", startDate: 08-01, endDate: 10-05, description: "tbd", type: "Berry"},
 {name: "Blackberry", href: "Blackberry", startDate: 08-01, endDate: 10-05, description: "tbd", type: "Berry"},
 {name: "Cloudberry", href: "Cloudberry", startDate: 08-01, endDate: 10-05, description: "tbd", type: "Berry"},
+];
+
+const infoItems =
+[
+{name: "Apple", language: ["Norwegian", "Latin"], type: ["Eple", }
 ];

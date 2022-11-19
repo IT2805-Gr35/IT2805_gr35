@@ -27,9 +27,7 @@ function listHandler() {
         listItem.appendChild(a);
         listItem.appendChild(article);
         document.getElementById("berryList").appendChild(listItem);
-        
-
-        console.log(listItem);
     }
     
 };
+console.log(infoItems[0].language[1]);
