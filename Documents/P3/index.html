@@ -13,9 +13,9 @@
 <body onload="search()">
     <header>
         <div class="header-container">
-            <div class="logo">CURRENT HARVEST</div>
+            <div><a href="index.html" class="logo">CURRENT HARVEST</a></div>
             <div class="search">
-                <input type="text" id="searchInput" onkeyup="search()" placeholder="Try searching for Chanterelle!">
+                <input type="text" id="searchInput" onkeyup="getSearchElements()" placeholder="Try searching for Chanterelle!">
                 <ul id="searchUL">
                     <li><a href="https://folk.ntnu.no/vebjorny/Documents/P2/P2_design_35.html">Chanterelle</a></li>
                     <li><a href="https://snl.no/eple">Apple</a></li>
@@ -44,7 +44,11 @@
         </div>
         
     </header>
-    <div class="main-container"></div>
+    <div class="main-container">
+        <h1 id="NNT-header">Welcome to Norsk Natur for Turister</h1>
+        
+
+    </div>
     <footer>
         <div class="footer-container">
             <img src="Images/facebook_cover_photo_1.png" alt="" style="width: 200px;">
@@ -57,6 +61,7 @@
         </div>
     </footer>
   <script src="scripts/search.js"></script>
+  <script src="scripts/pullItems.js"></script>
 </body>
 <script src="scripts/hamburger.js"></script>
 </html>
