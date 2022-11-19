@@ -17,4 +17,7 @@ const items =
 {name: "Cloudberry", href: "Cloudberry", startDate: 08-01, endDate: 10-05, description: "tbd", type: "Berry"},
 ];
 
-
+const infoItems =
+[
+{name: "Apple", language: ["Norwegian", "Latin"], type: ["Eple", }
+];
