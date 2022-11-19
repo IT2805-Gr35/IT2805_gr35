@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="listHandler()">
     <header>
         <div class="header-container">
             <div><a href="index.html"  class="logo">CURRENT HARVEST</a></div>
@@ -27,7 +27,7 @@
             </div>
         </div>
     </header>
-        <div class="list-container" onload="listHandler()">
+        <div class="list-container">
             <ul class="item-list">
                 
             </ul>
@@ -43,6 +43,7 @@
             </div>
         </div>
     </footer>
+    <script src="scripts/ItemArray.js"></script>
     <script src="scripts/inSeason.js"></script>
 </body>
 </html>
