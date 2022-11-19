@@ -347,6 +347,18 @@ footer {
     color:peru;
 }
 
+@media only screen and (max-width: 940px) {
+    .container {
+        display: block;
+    }
+
+    .child {
+        margin-bottom: 40px;
+        width: 80%;
+        min-height: 300px;
+    }
+}
+
 /*About section*/
 
 /* Infopage */
