@@ -19,19 +19,19 @@ const items =
 
 const infoItems =
 [
-{name: "Apple", language: ["Norwegian", "Latin", "English", "German", "French", "Spanish", "Chinese"], type: ["Eple", "Malus domestica", "Apple", "Apfel", "Pomme", "Manzana", "Píngguǒ"]}
-{name: "Orange", language: ["Norwegian", "Latin", "English", "German", "French", "Spanish", "Chinese"], type: ["Appelsin", "Citrus sinensis", "Oranges", "Apfelsine", "Orange", "Naranja", "Zhi shi"]}
-{name: "Plum", language: ["Norwegian", "Latin", "English", "German", "French", "Spanish", "Chinese"], type: ["Plommer", "Prunus domestica", "Plum", "Pflaume", "Prune", "Ciruela", "Zhōngguó"]}
-{name: "Cherry", language: ["Norwegian", "Latin", "English", "German", "French", "Spanish", "Chinese"], type: ["Kirsebær", "Prunus cerasus", "Cherries", "Kirschen", "Griottes", "Guindas", "Yīng táo"]}
-{name: "Pear", language: ["Norwegian", "Latin", "English", "German", "French", "Spanish", "Chinese"], type: ["Pærer", "Pyrus communis", "Pear", "Birne", "Poire", "Pera", "Nashi"]}
-{name: "Chanterelle", language: ["Norwegian", "Latin", "English", "German", "French", "Spanish", "Chinese"], type: ["Kantarell", "Cantharellus cibarius", "Chanterelle", "Pfifferling", "Girolle", "Rebozuelo", "Jidanhuang"]}
-{name: "Cep", language: ["Norwegian", "Latin", "English", "German", "French", "Spanish", "Chinese"], type: ["Steinsopp", "Boletus edulis", "Cep", "Steinpilz", "Pomme", "Manzana", "Mela"]}
-{name: "Sheep Polypore", language: ["Norwegian", "Latin", "English", "German", "French", "Spanish", "Chinese"], type: ["Eple", "Malus domestica", "Apple", "Apfel", "Pomme", "Manzana", "Mela"]}
-{name: "Shaggy Ink Cap", language: ["Norwegian", "Latin", "English", "German", "French", "Spanish", "Chinese"], type: ["Eple", "Malus domestica", "Apple", "Apfel", "Pomme", "Manzana", "Mela"]}
-{name: "Leccinum", language: ["Norwegian", "Latin", "English", "German", "French", "Spanish", "Chinese"], type: ["Eple", "Malus domestica", "Apple", "Apfel", "Pomme", "Manzana", "Mela"]}
-{name: "Strawberry", language: ["Norwegian", "Latin", "English", "German", "French", "Spanish", "Chinese"], type: ["Eple", "Malus domestica", "Apple", "Apfel", "Pomme", "Manzana", "Mela"]}
-{name: "Raspberry", language: ["Norwegian", "Latin", "English", "German", "French", "Spanish", "Chinese"], type: ["Eple", "Malus domestica", "Apple", "Apfel", "Pomme", "Manzana", "Mela"]}
-{name: "Blueberry", language: ["Norwegian", "Latin", "English", "German", "French", "Spanish", "Chinese"], type: ["Eple", "Malus domestica", "Apple", "Apfel", "Pomme", "Manzana", "Mela"]}
-{name: "Blackberry", language: ["Norwegian", "Latin", "English", "German", "French", "Spanish", "Chinese"], type: ["Eple", "Malus domestica", "Apple", "Apfel", "Pomme", "Manzana", "Mela"]}
+{name: "Apple", language: ["Norwegian", "Latin", "English", "German", "French", "Spanish", "Chinese"], type: ["Eple", "Malus domestica", "Apple", "Apfel", "Pomme", "Manzana", "Píngguǒ"]},
+{name: "Orange", language: ["Norwegian", "Latin", "English", "German", "French", "Spanish", "Chinese"], type: ["Appelsin", "Citrus sinensis", "Oranges", "Apfelsine", "Orange", "Naranja", "Zhi shi"]},
+{name: "Plum", language: ["Norwegian", "Latin", "English", "German", "French", "Spanish", "Chinese"], type: ["Plommer", "Prunus domestica", "Plum", "Pflaume", "Prune", "Ciruela", "Zhōngguó"]},
+{name: "Cherry", language: ["Norwegian", "Latin", "English", "German", "French", "Spanish", "Chinese"], type: ["Kirsebær", "Prunus cerasus", "Cherries", "Kirschen", "Griottes", "Guindas", "Yīng táo"]},
+{name: "Pear", language: ["Norwegian", "Latin", "English", "German", "French", "Spanish", "Chinese"], type: ["Pærer", "Pyrus communis", "Pear", "Birne", "Poire", "Pera", "Nashi"]},
+{name: "Chanterelle", language: ["Norwegian", "Latin", "English", "German", "French", "Spanish", "Chinese"], type: ["Kantarell", "Cantharellus cibarius", "Chanterelle", "Pfifferling", "Girolle", "Rebozuelo", "Jidanhuang"]},
+{name: "Cep", language: ["Norwegian", "Latin", "English", "German", "French", "Spanish", "Chinese"], type: ["Steinsopp", "Boletus edulis", "Cep", "Steinpilz", "Pomme", "Manzana", "Mela"]},
+{name: "Sheep Polypore", language: ["Norwegian", "Latin", "English", "German", "French", "Spanish", "Chinese"], type: ["Eple", "Malus domestica", "Apple", "Apfel", "Pomme", "Manzana", "Mela"]},
+{name: "Shaggy Ink Cap", language: ["Norwegian", "Latin", "English", "German", "French", "Spanish", "Chinese"], type: ["Eple", "Malus domestica", "Apple", "Apfel", "Pomme", "Manzana", "Mela"]},
+{name: "Leccinum", language: ["Norwegian", "Latin", "English", "German", "French", "Spanish", "Chinese"], type: ["Eple", "Malus domestica", "Apple", "Apfel", "Pomme", "Manzana", "Mela"]},
+{name: "Strawberry", language: ["Norwegian", "Latin", "English", "German", "French", "Spanish", "Chinese"], type: ["Eple", "Malus domestica", "Apple", "Apfel", "Pomme", "Manzana", "Mela"]},
+{name: "Raspberry", language: ["Norwegian", "Latin", "English", "German", "French", "Spanish", "Chinese"], type: ["Eple", "Malus domestica", "Apple", "Apfel", "Pomme", "Manzana", "Mela"]},
+{name: "Blueberry", language: ["Norwegian", "Latin", "English", "German", "French", "Spanish", "Chinese"], type: ["Eple", "Malus domestica", "Apple", "Apfel", "Pomme", "Manzana", "Mela"]},
+{name: "Blackberry", language: ["Norwegian", "Latin", "English", "German", "French", "Spanish", "Chinese"], type: ["Eple", "Malus domestica", "Apple", "Apfel", "Pomme", "Manzana", "Mela"]},
 {name: "Cloudberry", language: ["Norwegian", "Latin", "English", "German", "French", "Spanish", "Chinese"], type: ["Eple", "Malus domestica", "Apple", "Apfel", "Pomme", "Manzana", "Mela"]}
 ];
