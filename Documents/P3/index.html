@@ -11,20 +11,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
 </head>
 <body onload="getSearchItems(), search()">
-    <div class="header-container">
-        <header>
+    <header>
+        <div class="header-container">
             <object type="text/html" data="header.html"></object>
-        </header>
+        </div>
+    </header>
+    <div class="main-container">
+        <h1 id="NNT-header">Welcome to Norsk Natur for Turister</h1>
+        <p>This in season right now!</p>
+
     </div>
-    <div class="main-container"></div>
     <footer>
         <div class="footer-container">
-            <img src="Images/facebook_cover_photo_1.png" alt="" style="width: 200px;">
-            <div class="copyright">Copyright text</div>
+            <a href="https://www.regjeringen.no/" target="_blank"><img src="Images/facebook_cover_photo_1.png" alt="" style="width: 200px;"></a>
+            <div class="copyright">Ⓒ Norsk Natur for Turister</div>
             <div class="social">
-                <img src="Images/Instagram_Glyph_White 1.png" alt="" style="width: 50px;">
-                <img src="Images/f_logo_RGB-White_512 1.png" alt="" style="width: 50px;">
-                <img src="Images/M_logo_White 1.png" alt="" style="width: 50px;">
+                <a href="https://www.instagram.com/" target="_blank"><img src="Images/Instagram_Glyph_White 1.png" alt="" style="width: 50px;"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="Images/f_logo_RGB-White_512 1.png" alt="" style="width: 50px;"></a>
+                <a href="https://www.messenger.com/" target="_blank"><img src="Images/M_logo_White 1.png" alt="" style="width: 50px;"></a>
             </div>
         </div>
     </footer>
@@ -32,4 +36,5 @@
   <script src="scripts/pullItems.js"></script>
   <script src="scripts/search.js"></script>
 </body>
+<script src="scripts/hamburger.js"></script>
 </html>
