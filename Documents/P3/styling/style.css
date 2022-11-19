@@ -174,30 +174,25 @@ footer {
 
 /* berries.html */
 .list-container {
-    margin-right: auto;
-    margin-left: auto;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex: 1;
+    width: 100%;    
 }
 
 .item-list {
+    padding: 10% 5%;
+    margin: auto;
     list-style-type: none;
     width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1%;
 }
 
 .item {
-    display: flex;
-    flex-flow: row wrap;
     padding: 10px 5px 10px 5px;
-    border-width: 3px;
-    border-style: solid;
-    border-radius: 20px;
     margin-bottom: 5px;
     margin-top: 5px;
-    background-color: #ddd;
+    background-color: white;
+    border-radius: 10px;
 }
 
 .item a {
@@ -240,7 +235,9 @@ footer {
 #contact_form input{
     display: inline-block;
     width:70%;
-    font-size: 1rem;}
+    font-size: 1rem;
+}
+
 
 #contact_form label{
     display: inline-block;
