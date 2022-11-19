@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="getItemElements('fruit')">
     <header>
         <div class="header-container">
             <div><a href="index.html"  class="logo">CURRENT HARVEST</a></div>
@@ -29,9 +29,7 @@
     </header>
     <div class="main-container">Fruits</div>
     <div class="list-container">
-        <ul class="plant-list">
-            <li>fruit 1</li>
-            <li>fruit 2</li>
+        <ul id="fruit-list">
         </ul>
     </div>
     <footer>
@@ -45,5 +43,7 @@
             </div>
         </div>
     </footer>
+    <script src="scripts/ItemArray.js"></script>
+    <script src="scripts/pullItems.js"></script>
 </body>
 </html>
