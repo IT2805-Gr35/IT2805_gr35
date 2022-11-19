@@ -16,13 +16,3 @@ const items =
 {name: "Blackberry", href: "Blackberry", StartDate: 08-01, EndDate: 10-05, Description: "tbd", Type: "berry"},
 {name: "Cloudberry", href: "Cloudberry", StartDate: 08-01, EndDate: 10-05, Description: "tbd", Type: "berry"},
 ];
-
-function listHandler() {
-    const itemList = document.getElementsByClassName("item-list");
-    for(i=0;i<items.length;i++) {
-        const listItem = document.createElement("li");
-        listItem.innerHTML("lala")
-        listItem.classList.add("item");
-        itemList.append(listItem);
-    }
-}
