@@ -237,22 +237,29 @@ footer {
     text-align: center;
     
 }
+
+.formline > * {
+    box-sizing: border-box;
+}
 #contact_form input{
     display: inline-block;
     width:70%;
+    padding:0.3rem;
     font-size: 1rem;}
 
+#myfile {
+    padding:0 !important;
+}
 #contact_form label{
     display: inline-block;
     text-align: left;
     width:70%;
-    font-size: 1rem;
-    padding:0.2rem 0;}
+    font-size: 1rem;}
 
 #message{
     display: inline-block;
-    width:68%;
-    padding:0.5rem;
+    width:70%;
+    padding:0.3rem;
     font-size: 1rem;
 }
 
