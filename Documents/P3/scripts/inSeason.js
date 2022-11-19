@@ -1,8 +1,8 @@
 
 
-const itemList = document.getElementsByClassName("item-list");
+// const itemList = document.getElementsByClassName("item-list");
 
-function listHandler() {
+// function listHandler() {
     
     for(i=0;i<items.length;i++) {
         const listItem = document.createElement("li");
@@ -29,5 +29,5 @@ function listHandler() {
         document.getElementById("berryList").appendChild(listItem);
     }
     
-};
+
 console.log(infoItems[0].language[1]);
