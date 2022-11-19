@@ -2,11 +2,29 @@ function getItemElements(type) {
     let itemElements = document.getElementById(type + "-list");
     items.forEach(item => {
         if (item.type === type) {
-            let li = document.createElement("li");
-            hrefString = "items" + "/" + item.type + "/" + item.href + ".html";
-            imgString = "images/" + item.type + "/" + item.href + ".png";
-            li.innerHTML = `<a href="${hrefString}" >${item.name}<img src="${imgString}" width="100" height="100"></a>`;
-            itemElements.appendChild(li);
+            console.log(item);
+            const listItem = document.createElement("li");
+            const a = document.createElement("a");
+            const img = document.createElement("img");
+            const article = document.createElement("article");
+            const artHeader = document.createElement("h3");
+            const artParagraph = document.createElement("p")
+            listItem.className = "item";
+            a.href = item.href + ".html";
+            Object.assign(img, {
+                src: "images/" + item.type + "/" + item.href + ".png",
+                alt: item.name,
+                height: 100,
+                width: 100
+            })
+            artHeader.innerHTML = item.name;
+            artParagraph.innerHTML = item.description;
+            article.appendChild(artHeader);
+            article.appendChild(artParagraph)
+            a.appendChild(img);
+            listItem.appendChild(a);
+            listItem.appendChild(article);
+            itemElements.appendChild(listItem);
         }
         
     });
