@@ -288,11 +288,7 @@ footer {
 
 /*About section*/
 
-* {
-    margin: 0;
-    padding: 0;
-}
-h1 {
+#NNT-header {
     text-align: center;
     margin: 50px auto 100px;
     color: white;
@@ -318,7 +314,7 @@ h1 {
     line-height: 1.6; 
 }
 
-.logo{
+.about-logo{
     width: 130px;
     height: 130px;
     border-radius: 50%;
@@ -327,7 +323,7 @@ h1 {
     background: white;
 }
 
-.logo img{
+.about-logo img{
     width: 50px;
     margin-top: 40px;
 }
