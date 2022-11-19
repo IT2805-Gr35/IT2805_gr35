@@ -270,21 +270,27 @@ footer {
     flex: 1;
 }
 
+/* berries.html */
+.list-container {
+    width: 100%;    
+}
+
 .item-list {
+    padding: 10% 5%;
+    margin: auto;
     list-style-type: none;
     width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1%;
 }
 
 .item {
-    display: flex;
-    flex-flow: row wrap;
     padding: 10px 5px 10px 5px;
-    border-width: 3px;
-    border-style: solid;
-    border-radius: 20px;
     margin-bottom: 5px;
     margin-top: 5px;
-    background-color: #ddd;
+    background-color: white;
+    border-radius: 10px;
 }
 
 .item a {
@@ -324,22 +330,29 @@ footer {
     text-align: center;
     
 }
+
+.formline > * {
+    box-sizing: border-box;
+}
 #contact_form input{
     display: inline-block;
     width:70%;
+    padding:0.3rem;
     font-size: 1rem;}
 
+#myfile {
+    padding:0 !important;
+}
 #contact_form label{
     display: inline-block;
     text-align: left;
     width:70%;
-    font-size: 1rem;
-    padding:0.2rem 0;}
+    font-size: 1rem;}
 
 #message{
     display: inline-block;
-    width:68%;
-    padding:0.5rem;
+    width:70%;
+    padding:0.3rem;
     font-size: 1rem;
 }
 
