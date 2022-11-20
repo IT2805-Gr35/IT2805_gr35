@@ -10,16 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
 </head>
-
-<script src="//code.jquery.com/jquery-1.10.2.js"></script> 
-<script>  
-$(function(){ 
-  $("#header").load("header.html");  
-  $("#footer").load("footer.html");  
-}); 
-</script> 
-
-<body onload="getSearchItems(), search()">
+<body onload="inject_header_footer(), getSearchItems(), search()">
     <header>
         <div class="header-container" id="header">
         </div>
@@ -36,6 +27,7 @@ $(function(){
   <script src="scripts/ItemArray.js"></script>  
   <script src="scripts/pullItems.js"></script>
   <script src="scripts/search.js"></script>
+  <script src="scripts/headerFooter.js"></script>
 </body>
 <script src="scripts/hamburger.js"></script>
 </html>
