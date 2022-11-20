@@ -42,21 +42,3 @@ function displayInfoPage () {
 
     
 }
-
-/*
-<hr>
-                    <li> <p class="lang">Norwegian</p> <p class="type">Epler</p></li> 
-                    <hr>
-                    <li> <p class="lang">Latin</p> <p class="type">Malus domestica</p></li> 
-                    <hr>
-                    <li> <p class="lang">English</p> <p class="type">Apple</p></li> 
-                    <hr>
-                    <li> <p class="lang">German</p> <p class="type">Apfel</p></li> 
-                    <hr>
-                    <li> <p class="lang">French</p> <p class="type">"Pomme"</p></li> 
-                    <hr>
-                    <li> <p class="lang">Spanish</p> <p class="type">Manzana</p></li> 
-                    <hr>
-                    <li> <p class="lang">Italian</p> <p class="type">Mela</p></li>  
-                    <hr>
-*/
