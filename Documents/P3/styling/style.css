@@ -298,8 +298,7 @@ footer {
     padding: 10px;
     float: right;
     width: 50%;
-    justify-content: center;
-    align-items: center;
+    
 }
 
 .item:hover {
@@ -308,6 +307,11 @@ footer {
 
 .item h2 {
     text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.item p {
     color: white;
 }
 
