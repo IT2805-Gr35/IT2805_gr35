@@ -268,27 +268,24 @@ footer {
     padding: 10% 5%;
     margin: auto;
     list-style-type: none;
-    width: 80%;
+    width: 60%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 1%;
 }
 
 .item {
     padding: 10px 5px 10px 5px;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    background-color: white;
+    margin: 20px;
     border-radius: 10px;
-}
-
-.item a {
-    align-self: flex-start;
+    background-color: #ce832e;
+    box-shadow: 7px 7px 9px 9px rgba(66, 63, 63, 0.667);
 }
 
 .item a img {
     border: 1px transparent;
     border-radius: 20px;
+    margin-left: 20px;
 }
 
 .item article {
@@ -296,8 +293,18 @@ footer {
 }
 
 .item:hover {
-    background-color: #ddb;
+    background-color: #eeb16b;
 }
+
+.item h3 {
+    text-align: center;
+}
+
+.item p {
+
+}
+
+
 
 /* berries.html */
 
