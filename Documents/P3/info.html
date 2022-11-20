@@ -10,8 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
 </head>
-<body onload="displayInfoPage()">
-    <header></header>
+<body onload="displayInfoPage(),inject_header_footer(), getSearchItems(), search()">
+    <header>
+        <div class="header-container" id="header">
+        </div>
+    </header>
     <div class="main-container" id="page">
         <h1 id="infoHeader">Apples</h1>
         <h3 id="infoSub">Apple is a fruit known since the Stone Age and is found today in an unknown number of varieties. The apple originally comes from Asia and we know the fruit from the biblical story, where Eve tempts Adam with a fruit from the tree of knowledge.</h3>
@@ -61,7 +64,10 @@
     </div>
 
 
-    <footer></footer>
+    <footer>
+        <div class="footer-container" id="footer">
+        </div>
+    </footer>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/ItemArray.js"></script>
     <script src="scripts/clickDirector.js"></script>
@@ -69,6 +75,6 @@
     <script src="scripts/pushInfo.js"></script>
     <script src="scripts/search.js"></script>
     <script src="scripts/slideshow.js"></script>
-    <script src="scripts/validate_form.js"></script>
+    <script src="scripts/headerFooter.js"></script>
 </body>
 </html>

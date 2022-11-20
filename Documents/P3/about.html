@@ -6,9 +6,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="styling/style.css">
 </head>
-<header></header>
-<body>
-
+<body onload="inject_header_footer(), getSearchItems(), search()">
+    <header>
+        <div class="header-container" id="header">
+        </div>
+    </header>
     <h1 id="NNT-header">Norsk Natur for Turister</h1>
     
     <div class="container">
@@ -39,6 +41,15 @@
 
         
     </div>
+    <footer>
+        <div class="footer-container" id="footer">
+        </div>
+    </footer>
+    <script src="scripts/ItemArray.js"></script>  
+    <script src="scripts/pullItems.js"></script>
+    <script src="scripts/search.js"></script>
+    <script src="scripts/headerFooter.js"></script>
 </body>
-<footer></footer>
+<script src="scripts/hamburger.js"></script>
+
 </html>
