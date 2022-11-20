@@ -418,16 +418,24 @@ footer {
 /* Contact form section*/ 
 
 /* Slideshow */
-.slideshow-container {
-    max-width: 1000px;
+#slideshow-container {
+    width: 100%;
     position: relative;
-    margin: auto;
-  }
+    display: block;
+}
+.slide {
+    width: 100%;
+}
+
+.slideImg {
+    width: 100%;
+    height: auto;
+}
 
 .fade {
     animation-name: fade;
     animation-duration: 3s;
-  }
+}
   
 @keyframes fade {
     from {opacity: .4} 
