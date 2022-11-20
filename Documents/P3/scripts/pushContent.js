@@ -3,9 +3,10 @@
 function displayInfoPage () {
     document.getElementById("infoHeader").innerHTML = "placeholder";
     document.getElementById("infoSub").innerHTML = "placeholder";
-    langListItems = document.getElementById("languageList").querySelectorAll("li");
+    langListItems = document.getElementsByClassName("type");
+    console.log();
 
-    for(i=0; i<infoItems; i++) {
-        langListItems[i].innerHTML = infoItems.language[i];
+    for(i=0; i<langListItems.length; i++) {
+        langListItems[i].innerHTML = infoItems.type[items.syntax[]];
     }
 }
