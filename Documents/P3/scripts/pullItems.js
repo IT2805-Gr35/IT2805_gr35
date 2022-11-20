@@ -32,7 +32,6 @@ function getItemElements(type) {
 function getSearchItems() {
     let searchItems = document.getElementById("searchUL");
     console.log(searchItems);
-    console.log("after");
     items.forEach(item => {
         let li = document.createElement("li");
         hrefString = "items" + "/" + item.type + "/" + item.href + ".html";
