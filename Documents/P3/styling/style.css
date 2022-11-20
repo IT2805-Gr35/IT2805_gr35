@@ -148,7 +148,7 @@ header {
         display: block;
     }
 } */
-@media (max-width:1500px){
+@media (max-width:1000px){
     .header-container{
         width: 95%;
     }
