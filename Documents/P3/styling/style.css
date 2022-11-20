@@ -152,9 +152,11 @@ header {
     .header-container{
         width: 95%;
     }
+
     .header-container:nth-last-child(){
         justify-content: end;
     }
+
     .navbar {
         position: absolute;
         float: right;
@@ -302,8 +304,11 @@ footer {
     text-align: center;
 }
 
-@media only screen (max-width: 940px) {
-    .captionText: 
+@media only screen and (max-width: 600px) {
+    
+    .item-list {
+        width: 100%;
+    }
 }
 
 
