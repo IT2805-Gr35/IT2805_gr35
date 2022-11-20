@@ -7,10 +7,11 @@ function getItemElements(type) {
             const a = document.createElement("a");
             const img = document.createElement("img");
             const article = document.createElement("article");
-            const artHeader = document.createElement("h3");
+            const artHeader = document.createElement("h2");
             const artParagraph = document.createElement("p")
             listItem.className = "item";
-            article.className = "captionText"
+            listItem.id = item.name;
+            article.className = "captionText";
             a.href = "info.html";
             Object.assign(img, {
                 src: "images/" + item.type + "/" + item.href + ".png",
@@ -19,7 +20,7 @@ function getItemElements(type) {
             artHeader.innerHTML = item.name;
             artParagraph.innerHTML = item.description;
             article.appendChild(artHeader);
-            article.appendChild(artParagraph)
+            article.appendChild(artParagraph);
             a.appendChild(img);
             listItem.appendChild(a);
             listItem.appendChild(article);
