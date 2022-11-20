@@ -12,20 +12,25 @@ function pullSeasonIndex() {
     for(i=0; i<items.length; i++) {
         const startDate = items[i].startDate;
         const endDate = items[i].endDate;
+        const ulId = document.getElementById(items[i].type + "-list");
         if (parseInt(month) <= parseInt(endDate) && parseInt(month) >= parseInt(startDate)) {
             const name = items[i].name
             document.getElementById(name).style.borderStyle = "solid";
-            document.getElementById(name).style.borderRadius = "5px";
             document.getElementById(name).style.borderColor = "#56fc03";
         }
         else if (parseInt(month) > parseInt(endDate) || parseInt(month) < parseInt(startDate)) {
             const name = items[i].name
-            document.getElementById(name).style.display = "none";
-        }
-        else if (document.getElementById(items[i].type + "-list").childNodes.length < 1) {
-            console.log("lalalaalla")
+            document.getElementById(name).remove();
         }
 
+        if (ulId.children.length >= 1) {
+            ulId.style.padding = "0px";
+        }
+        else if (ulId.children.length < 1) {
+            ulId.remove();
+        }
+
+        document.getElementById("list-container").style.paddingBottom = "60px";
 
     }
 }
