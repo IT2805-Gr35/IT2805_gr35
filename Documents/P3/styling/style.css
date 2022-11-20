@@ -148,7 +148,7 @@ header {
         display: block;
     }
 } */
-@media (max-width:1500px){
+@media (max-width:1000px){
     .header-container{
         width: 95%;
     }
@@ -265,7 +265,7 @@ footer {
 }
 
 .item-list {
-    padding: 10% 5%;
+    padding-bottom: 60px;
     margin: auto;
     list-style-type: none;
     width: 60%;
@@ -283,13 +283,15 @@ footer {
 }
 
 .item a img {
-    border: 1px transparent;
-    border-radius: 20px;
+    border-radius: 5px;
     margin-left: 20px;
+    width: 40%;
 }
 
-.item article {
+.captionText {
     padding-left: 10px;
+    float: right;
+    width: 50%;
 }
 
 .item:hover {
@@ -300,10 +302,9 @@ footer {
     text-align: center;
 }
 
-.item p {
-
+@media only screen (max-width: 940px) {
+    .captionText: 
 }
-
 
 
 /* berries.html */
