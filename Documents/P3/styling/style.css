@@ -241,6 +241,8 @@ footer {
 .footer-container img {
     justify-self: start;
     align-self: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .copyright {
