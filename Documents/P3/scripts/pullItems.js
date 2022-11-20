@@ -34,7 +34,6 @@ function getSearchItems() {
     items.forEach(item => {
         const li = document.createElement("li");
         const a = document.createElement("a");
-        sessionStorage.setItem("clickTarget", item.name);
         a.href = "info.html";
         a.innerHTML = item.name;
         li.appendChild(a);
