@@ -13,7 +13,28 @@
 <body onload="getSearchItems(), search()">
     <header>
         <div class="header-container">
-            <object type="text/html" data="header.html"></object>
+            <div class="logo_container"><a href="index.html" class="logo">CURRENT HARVEST</a></div>
+            <div class="navbar" id="navbar">
+                <ul>
+                    <li>
+                        <div class="search">
+                            <input type="text" id="searchInput" onkeyup="search()" placeholder="Try searching for Chanterelle!">
+                            <ul id="searchUL"></ul>
+                        </div>
+                    </li>
+                    <li><a href="fruit.html">Fruit</a></li>
+                    <li><a href="berries.html">Berries</a></li>
+                    <li><a href="mushrooms.html">Mushrooms</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="">Laws</a></li>
+                    <li><a href="contact.html">Request info</a></li>
+                </ul>
+            </div>
+            <div class="hamburger" onclick="hamburger(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
         </div>
     </header>
     <div class="main-container">
