@@ -14,7 +14,6 @@ function inject_header_footer(){
             <li><a href="berries.html">Berries</a></li>\
             <li><a href="mushrooms.html">Mushrooms</a></li>\
             <li><a href="about.html">About</a></li>\
-            <li><a href="">Laws</a></li>\
             <li><a href="contact.html">Request info</a></li>\
         </ul>\
     </div>\
