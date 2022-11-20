@@ -148,13 +148,15 @@ header {
         display: block;
     }
 } */
-@media (max-width:1500px){
+@media (max-width:1000px){
     .header-container{
         width: 95%;
     }
+
     .header-container:nth-last-child(){
         justify-content: end;
     }
+
     .navbar {
         position: absolute;
         float: right;
@@ -265,39 +267,50 @@ footer {
 }
 
 .item-list {
-    padding: 10% 5%;
+    padding-bottom: 60px;
     margin: auto;
     list-style-type: none;
-    width: 80%;
+    width: 60%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 1%;
 }
 
 .item {
     padding: 10px 5px 10px 5px;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    background-color: white;
+    margin: 20px;
     border-radius: 10px;
-}
-
-.item a {
-    align-self: flex-start;
+    background-color: #ce832e;
+    box-shadow: 7px 7px 9px 9px rgba(66, 63, 63, 0.667);
 }
 
 .item a img {
-    border: 1px transparent;
-    border-radius: 20px;
+    border-radius: 5px;
+    margin-left: 20px;
+    width: 40%;
 }
 
-.item article {
+.captionText {
     padding-left: 10px;
+    float: right;
+    width: 50%;
 }
 
 .item:hover {
-    background-color: #ddb;
+    background-color: #eeb16b;
 }
+
+.item h3 {
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .item-list {
+        width: 100%;
+    }
+}
+
 
 /* berries.html */
 

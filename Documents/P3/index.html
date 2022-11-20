@@ -10,10 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
 </head>
-<body onload="getSearchItems(), search()">
+<body onload="inject_header_footer(), getSearchItems(), search()">
     <header>
-        <div class="header-container">
-            <object type="text/html" data="header.html" width="100%"></object>
+        <div class="header-container" id="header">
         </div>
     </header>
     <div class="main-container">
@@ -22,13 +21,13 @@
 
     </div>
     <footer>
-        <div class="footer-container">
-           <object data="footer.html" type="text/html" width="100%" height="100%"></object>
+        <div class="footer-container" id="footer">
         </div>
     </footer>
   <script src="scripts/ItemArray.js"></script>  
   <script src="scripts/pullItems.js"></script>
   <script src="scripts/search.js"></script>
+  <script src="scripts/headerFooter.js"></script>
 </body>
 <script src="scripts/hamburger.js"></script>
 </html>

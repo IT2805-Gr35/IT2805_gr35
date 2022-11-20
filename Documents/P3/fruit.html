@@ -10,40 +10,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
 </head>
-<body onload="getItemElements('fruit')">
+<body onload="getItemElements('fruit'), inject_header_footer(), getSearchItems(), search()">
     <header>
-        <div class="header-container">
-            <div><a href="index.html"  class="logo">CURRENT HARVEST</a></div>
-            <div class="search"></div>
-            <div class="navbar">
-                <ul>
-                    <li><a href="fruit.html">Fruit</a></li>
-                    <li><a href="berries.html">Berries</a></li>
-                    <li><a href="mushrooms.html">Mushrooms</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Laws</a></li>
-                    <li><a href="contact.html">Request info</a></li>
-                </ul>
-            </div>
+        <div class="header-container" id="header">
         </div>
     </header>
     <div class="main-container">Fruits</div>
     <div class="list-container">
+        <h1 class="infoHeader">Fruit</h1>
         <ul id="fruit-list">
         </ul>
     </div>
     <footer>
-        <div class="footer-container">
-            <img src="Images/facebook_cover_photo_1.png" alt="" style="width: 200px;">
-            <div class="copyright">Copyright text</div>
-            <div class="social">
-                <img src="Images/Instagram_Glyph_White 1.png" alt="" style="width: 50px;">
-                <img src="Images/f_logo_RGB-White_512 1.png" alt="" style="width: 50px;">
-                <img src="Images/M_logo_White 1.png" alt="" style="width: 50px;">
-            </div>
+        <div class="footer-container" id="footer">
         </div>
     </footer>
     <script src="scripts/ItemArray.js"></script>
-    <script src="scripts/pullItems.js"></script>
+    <script src="scripts/clickDirector.js"></script>
+    <script src="scripts/pullItems.js"></script> 
+    <script src="scripts/search.js"></script>
+    <script src="scripts/headerFooter.js"></script>
+</body>
+    <script src="scripts/hamburger.js"></script>
+
 </body>
 </html>
