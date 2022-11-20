@@ -10,12 +10,11 @@ function getItemElements(type) {
             const artHeader = document.createElement("h3");
             const artParagraph = document.createElement("p")
             listItem.className = "item";
-            a.href = "info.html";
+            article.className = "captionText"
+            a.href = item.href + ".html";
             Object.assign(img, {
                 src: "images/" + item.type + "/" + item.href + ".png",
-                alt: item.name,
-                height: 100,
-                width: 100
+                alt: item.name
             })
             artHeader.innerHTML = item.name;
             artParagraph.innerHTML = item.description;
