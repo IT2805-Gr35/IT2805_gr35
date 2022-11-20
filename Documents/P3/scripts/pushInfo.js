@@ -14,9 +14,9 @@ function displayInfoPage () {
         if(clickInfo == items[i].name) {
             document.getElementById("infoSub").innerHTML = infoItems[i].infoSub;
             for(j=0; j<3; j++) {
-                s1.querySelector("img").src = "Images/" + items[i].type + "/" + items[i].href + "1.png";
-                s2.querySelector("img").src = "Images/" + items[i].type + "/" + items[i].href + "2.png";
-                s3.querySelector("img").src = "Images/" + items[i].type + "/" + items[i].href + "3.png";
+                s1.querySelector("img").src = "images/" + items[i].type + "/" + items[i].href + "1.png";
+                s2.querySelector("img").src = "images/" + items[i].type + "/" + items[i].href + "2.png";
+                s3.querySelector("img").src = "images/" + items[i].type + "/" + items[i].href + "3.png";
             }
         }
     }

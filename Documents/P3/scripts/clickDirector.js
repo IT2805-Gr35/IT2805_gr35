@@ -10,8 +10,8 @@ function clickDirector(e) {
         sessionStorage.setItem("clickTarget",e.target.parentElement.nextElementSibling.querySelector("h2").innerText)
     }
     else if(e.target.nodeName == "A") {
-        clickTarget = e.target.nextElementSibling.querySelector("h2").innerText;
-        sessionStorage.setItem("clickTarget",e.target.nextElementSibling.querySelector("h2").innerText)
+        clickTarget = e.target.innerText;
+        sessionStorage.setItem("clickTarget",e.target.innerText)
     }
     else if(e.target.nodeName == "ARTICLE") {
         clickTarget = e.target.querySelector("h2").innerText;
@@ -25,7 +25,7 @@ function clickDirector(e) {
         clickTarget = e.target.innerText;
         sessionStorage.setItem("clickTarget",e.target.innerText)
     }
-    console.log(clickTarget);
+    console.log("CLICK TARGET: " + clickTarget);
 };
 let clickTarget = "";
 document.addEventListener("click", clickDirector);

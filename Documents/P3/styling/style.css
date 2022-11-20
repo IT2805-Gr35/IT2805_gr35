@@ -58,6 +58,8 @@ header {
 .search {
     grid-column: 2;
     grid-row: 0;
+    width:335px;
+    height:75px;
 }
 
 .navbar {
@@ -105,13 +107,20 @@ header {
     background-repeat: no-repeat;
     background-size: contain;
 }
-  
+
   #searchUL {
     /* Remove default list styling */
     list-style-type: none;
     padding: 0;
     margin: 0;
     max-height: 10px;
+    flex:row;
+    display:block;
+  }
+
+  #searchUL li {
+    position: relative;
+    z-index: 100;
   }
   
   #searchUL li a {
@@ -126,7 +135,7 @@ header {
     color: black; 
     display: block; 
     width: 90vw;
-    max-width: 435px;
+    max-width: 285px;
     border-radius: 4px;
   }
   
