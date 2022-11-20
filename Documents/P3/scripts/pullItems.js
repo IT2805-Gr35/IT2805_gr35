@@ -7,7 +7,7 @@ function getItemElements(type) {
             const a = document.createElement("a");
             const img = document.createElement("img");
             const article = document.createElement("article");
-            const artHeader = document.createElement("h3");
+            const artHeader = document.createElement("h2");
             const artParagraph = document.createElement("p")
             listItem.className = "item";
             article.className = "captionText"
