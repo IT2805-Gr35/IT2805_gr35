@@ -151,9 +151,11 @@ header {
     .header-container{
         width: 95%;
     }
+
     .header-container:nth-last-child(){
         justify-content: end;
     }
+
     .navbar {
         position: absolute;
         float: right;
@@ -226,7 +228,7 @@ footer {
 .footer-container {
     display: flex;
     flex-direction: row;
-    width: 80%;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
     margin-top: 20px;
@@ -301,8 +303,11 @@ footer {
     text-align: center;
 }
 
-@media only screen (max-width: 940px) {
-    .captionText: 
+@media only screen and (max-width: 600px) {
+    
+    .item-list {
+        width: 100%;
+    }
 }
 
 
@@ -390,12 +395,12 @@ footer {
 }
 
 
-.container {
+.about-container {
     display: flex;
     gap: 2rem;
     margin: 20px;
 }
-.child {
+.about-child {
     width: 100%;
     min-height: 380px;
     padding: 30px;
@@ -404,7 +409,6 @@ footer {
     text-align: center;
     cursor: pointer;
     background: white;
-    box-shadow: 0 0 20px -15px black;
     transition: 0.7s;  
     line-height: 1.6; 
 }
@@ -424,7 +428,7 @@ footer {
 }
 
 
-.child h2 {
+.about-child h2 {
     height: 35px;
     width: 80%;
     background: white;
@@ -434,20 +438,20 @@ footer {
 }
 
 
-.child:hover{
+.about-child:hover{
     transform: translateY(-50px);
 }
 
-.child:hover h2{
+.about-child:hover h2{
     color:peru;
 }
 
 @media only screen and (max-width: 940px) {
-    .container {
+    .about-container {
         display: block;
     }
 
-    .child {
+    .about-child {
         margin-bottom: 40px;
         width: 80%;
         min-height: 300px;

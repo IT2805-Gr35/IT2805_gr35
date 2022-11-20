@@ -11,7 +11,7 @@ function getItemElements(type) {
             const artParagraph = document.createElement("p")
             listItem.className = "item";
             article.className = "captionText"
-            a.href = item.href + ".html";
+            a.href = "info.html";
             Object.assign(img, {
                 src: "images/" + item.type + "/" + item.href + ".png",
                 alt: item.name
