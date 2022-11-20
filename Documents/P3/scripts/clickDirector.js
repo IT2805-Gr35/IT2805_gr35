@@ -25,7 +25,7 @@ function clickDirector(e) {
         clickTarget = e.target.innerText;
         sessionStorage.setItem("clickTarget",e.target.innerText)
     }
-    console.log("CLICK TARGET: " + clickTarget);
+    
 };
 let clickTarget = "";
 document.addEventListener("click", clickDirector);
