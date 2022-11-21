@@ -279,9 +279,10 @@ footer {
     flex: 1;
 }
 
-/* berries.html */
+/* berries/mushrooms/fruit.html */
 .list-container {
-    width: 100%;    
+    width: 100%;
+    margin-bottom: 60px; 
 }
 
 .item-list {
