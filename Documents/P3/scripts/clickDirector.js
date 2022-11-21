@@ -1,5 +1,5 @@
 
-
+//Finds the clicked listitem and stores the name as a key-value pair using sessionstorage
 function clickDirector(e) {
     if (e.target.nodeName == "P") {
         clickTarget = e.target.previousElementSibling.innerText;
