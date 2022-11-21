@@ -107,7 +107,7 @@ header {
     margin-bottom: 0px;
     border-radius: 4px;
     /* Add search icon */
-    background-image: url("/Documents/P3/images/search_icon.png");
+    /* background-image: url("/Documents/P3/images/search_icon.png"); */
     background-repeat: no-repeat;
     background-size: contain;
 }
