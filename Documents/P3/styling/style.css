@@ -107,6 +107,7 @@ header {
     margin-bottom: 0px;
     border-radius: 4px;
     /* Add search icon */
+    /* This is done using inline styling in headerFooter.js because otherwise it doesn't load in folk.ntnu.no */
     /* background-image: url("/Documents/P3/images/search_icon.png"); */
     background-repeat: no-repeat;
     background-size: contain;
@@ -426,6 +427,7 @@ footer {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    min-width: 177px;
 }
 
 #contact_form input[type=file] {
