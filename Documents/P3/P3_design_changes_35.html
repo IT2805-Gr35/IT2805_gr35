@@ -32,7 +32,13 @@
         <p><b>Changes to contact.html:</b> Changed the field structure of the original design, in order to remove undesired user inputs like zip or adress. Decided to make background of input fields white to improve readability against the background. Changed the layout to a centered single column with input label above the input field for improved readability and ease of universial use across platforms. Made submit button of same width as the rows above, color green with white text in order to increase visibility for user. Button changes to darker colour on hover.</p>
         <p><b>Changes to fruit.html, berries.html, mushrooms.html:</b>Changed layout from items in double column to single column layout. Also changed the content of each item to just contain the item name and a short description.</p>
         <p><b>Changes to information.html:</b> There have been some changes in the design of the page. Initially, there was not supposed to be a caption between the headline and the slideshow, but this was added as it looked a bit better. I also separated the info box into two parts, one with language and one with general info.</p>
-
+        <p><b>Additional Javascript file clickDirector.js:</b> Javascript needed to find the clicked item and give that information to pushInfo.js</p>
+        <p><b>Additional Javascript file hamburger.js:</b> Javascript needed to make the functionality of the hamburger menu</p>
+        <p><b>Additional Javascript file headerFooter.js:</b> Script needed for mudularity and pushing header and footer to each page</p>
+        <p><b>Additional Javascript file itemArray.js:</b> Script needed to store the information we need for each list-item as well as information to be loaded in info.html</p>
+        <p><b>Additional Javascript file pullItems.js:</b> Script needed to create each list item using the information stored in itemArray.js</p>
+        <p><b>Additional Javascript file pushInfo.js:</b> Script needed to push content to info.html so that we can have just one html file for it</p>
+        <p><b>Javascript file validate_form.js:</b> Formerly cleanup.js, just renamed </p>
     
     </section>
     <section>
@@ -118,10 +124,10 @@
                     <li>search.js</li>
                     <li>slideshow.js</li>
                     <li>clickDirector.js</li>
-                    <li>hamburger</li>
+                    <li>hamburger.js</li>
                     <li>ItemArray.js</li>
                     <li>pullitems.js</li>
-                    <li>pushInfo</li>
+                    <li>pushInfo.js</li>
                     <li>headerFooter.js</li>
                 </ul>
             </li>
@@ -155,7 +161,7 @@
                     <td>All</td>
                 </tr>
                 <tr>
-                    <td>Information.html</td>
+                    <td>Info.html</td>
                     <td>Info-page containing information on any single chosen fruit, berry or mushroom</td>
                     <td>Karl</td>
                 </tr>
@@ -186,38 +192,38 @@
                 </tr>
                 <tr>
                     <td>slideshow.js</td>
-                    <td>Slideshow for pictures on the site </td>
+                    <td>Slideshow for pictures on info.html </td>
                     <td>Karl</td>
                 </tr>
                 <tr>
                     <td>hamburger.js</td>
-                    <td>hamburgermeny som vises når nettsiden er mindre enn 1300px bredde</td>
+                    <td>Hamburger menu that shows when the webpage is less then 1300px wide</td>
                     <td>Karl Emil</td>
                 </tr>
                 <tr>
                     <td>headerFooter.js</td>
-                    <td>scirpt som pusher header og footer inn på nettsidene</td>
+                    <td>Script that pushes header and footer to each page</td>
                     <td>Karl Emil</td>
                 </tr>
                 <tr>
                     <td>pushInfo.js</td>
-                    <td>tar et nøkkelord (avhenigg av hva man har klikket på) og bruker dette til å </td>
+                    <td>Gets keyword from clickDirector.js and uses it to load the correct content for info.html</td>
                     <td>Christer</td>
                 </tr>
                 <tr>
                     <td>ItemArray.js</td>
-                    <td>infromasjon om bær, sopp og frukt i en array</td>
+                    <td>Arrays to store information about all list-items and information for filling out info.html</td>
                     <td>Christer, Karl</td>
                 </tr>
                 <tr>
                     <td>clickDirector.js</td>
-                    <td>finn ut hvilket element man har klikket, lagre dette som et keyword, sende dette til pushInfo.js</td>
+                    <td>Find what list-item that has been clicked and store the name as a key-value pair using sessionstorage, so that info.html can load the right content</td>
                     <td>Christer</td>
                 </tr>
                 <tr>
                     <td>pullitems.js</td>
-                    <td>Første delen lager alle liste elementene. Siste del lager liste i search baren</td>
-                    <td>Vebjørn</td>
+                    <td>First function makes all list items, second function makes list-items for search bar</td>
+                    <td>Vebjørn, Christer</td>
                 </tr>
                 <tr>
                     <td>Style.css</td>
