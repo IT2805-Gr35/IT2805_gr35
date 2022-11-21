@@ -333,6 +333,26 @@ footer {
     }
 }
 
+@media only screen and (max-width: 600px) {
+    .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .item a img {
+        min-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .item article {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 
 /* berries.html */
 
