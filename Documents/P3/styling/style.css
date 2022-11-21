@@ -174,7 +174,7 @@ header {
         position: absolute;
         float: right;
         right: 0;
-        top: 30px;
+        top: 100px;
     }
 
     .navbar li {
@@ -185,7 +185,7 @@ header {
         flex-flow: column nowrap;
         background-color: var(--color-navbar);
         height: 95vh;
-        width: 500px;
+        width: 350px;
         padding-left: 0;
         transition: transform 0.3s ease-in-out;
         display: none;
