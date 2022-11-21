@@ -1,5 +1,5 @@
 
-
+//Gets the name of clicked item from clickdirector.js and uses it to load the correct content for info.html.
 function displayInfoPage () {
     const clickInfo = sessionStorage.getItem("clickTarget");
     document.getElementById("infoHeader").innerHTML = clickInfo;
