@@ -1,3 +1,4 @@
+/* Array that stores all values for list items */
 const items = 
 [
     {name: "Apple", href: "Apple", startDate: 08, endDate: 11, description: "Apple is a fruit known since the Stone Age and is found today in an unknown number of varieties. The apple originally comes from Asia and we know the fruit from the biblical story, where Eve tempts Adam with a fruit from the tree of knowledge.", type: "fruit", syntax: "0"},
@@ -17,6 +18,7 @@ const items =
     {name: "Cloudberry", href: "Cloudberry", startDate: 07, endDate: 09, description: "Cloudberries thrive best in marshy areas. Many people love them and go to great lengths to find them. The berry pickers often say that they are looking for the gold of the forest, as mullets are also called. The berries are yellow-orange and golden, and taste completely unique. Both sour and sweet!", type: "berry", syntax: "14"},
 ];
 
+/* Array that stores info for filling out content of info.html */
 const infoItems =
 [
     {name: "Apple", language: ["Norwegian", "Latin", "English", "German", "French", "Spanish", "Chinese"], type: ["Eple", "Malus domestica", "Apple", "Apfel", "Pomme", "Manzana", "Píngguǒ"], infoSub:"Apple is a fruit known since the Stone Age and is found today in an unknown number of varieties. The apple originally comes from Asia and we know the fruit from the biblical story, where Eve tempts Adam with a fruit from the tree of knowledge."},
