@@ -8,7 +8,7 @@ function displayInfoPage () {
     const s1 = document.getElementById("slide1");
     const s2 = document.getElementById("slide2");
     const s3 = document.getElementById("slide3");
-
+    const slideClass = document.getElementsByClassName("slideImg");
 
     //Sets img source for slideshow and content for info paragraph on top of page
     for(i=0; i<items.length; i++) {
@@ -18,6 +18,7 @@ function displayInfoPage () {
                 s1.querySelector("img").src = "images/" + items[i].type + "/" + items[i].href + "1.png";
                 s2.querySelector("img").src = "images/" + items[i].type + "/" + items[i].href + "2.png";
                 s3.querySelector("img").src = "images/" + items[i].type + "/" + items[i].href + "3.png";
+                slideClass[j].alt = clickInfo;
             }
         }
     }
