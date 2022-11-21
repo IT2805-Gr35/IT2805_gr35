@@ -6,7 +6,7 @@ function inject_header_footer(){
         <ul>\
             <li>\
                 <div class="search">\
-                    <input type="text" id="searchInput" onkeyup="search()" placeholder="Try searching for Chanterelle!">\
+                    <input type="text" id="searchInput" onkeyup="search()" placeholder="Try searching for Chanterelle!" style="background-image: url(\'Images/search_icon.png\');">\
                     <ul id="searchUL"></ul>\
                 </div>\
             </li>\

@@ -3,6 +3,7 @@
 function displayInfoPage () {
     const clickInfo = sessionStorage.getItem("clickTarget");
     document.getElementById("infoHeader").innerHTML = clickInfo;
+    document.getElementById("infoTitle").innerHTML = clickInfo;
     const langList = document.getElementById("languageList");
     const s1 = document.getElementById("slide1");
     const s2 = document.getElementById("slide2");
