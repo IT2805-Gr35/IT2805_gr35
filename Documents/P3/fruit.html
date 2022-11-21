@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
 </head>
-<body onload="getItemElements('fruit'), inject_header_footer(), getSearchItems(), search()">
+<body onload="getItemElements('fruit'), inject_header_footer(), getSearchItems(), search(), pullSeasonRest()">
     <header>
         <div class="header-container" id="header">
         </div>
@@ -26,7 +26,8 @@
     </footer>
     <script src="scripts/ItemArray.js"></script>
     <script src="scripts/clickDirector.js"></script>
-    <script src="scripts/pullItems.js"></script> 
+    <script src="scripts/pullItems.js"></script>
+    <script src="scripts/inSeason.js"></script>
     <script src="scripts/search.js"></script>
     <script src="scripts/headerFooter.js"></script>
 </body>

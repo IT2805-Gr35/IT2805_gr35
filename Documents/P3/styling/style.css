@@ -26,23 +26,23 @@ header {
     background-color: var(--color-navbar);
     color: var(--color-text);
     padding: 0;
-    min-width: 100vw;
+    min-width: 100%;
     width: max-content;
 }
 
 .header-container {
     display: grid;
-    width: 95%;
+    width: 90%;
     margin-right: auto;
     margin-left: auto;
     margin-top: 20px;
     margin-bottom: 20px;
     vertical-align: middle;
-    height: 80px;
+    height: 60px;
 }
 
 .logo {
-    font-size: 38px;
+    font-size: 30px;
     font-weight: 600;
     grid-column: 1;
     grid-row: 0;
@@ -58,6 +58,8 @@ header {
 .search {
     grid-column: 2;
     grid-row: 0;
+    width:335px;
+    height:75px;
 }
 
 .navbar {
@@ -86,7 +88,7 @@ header {
     text-decoration: none;
     color: var(--color-text);
     padding: 4px;
-    font-size: 32px;
+    font-size: 28px;
 }
 
 .hamburger {
@@ -105,14 +107,20 @@ header {
     background-repeat: no-repeat;
     background-size: contain;
 }
-  
+
   #searchUL {
     /* Remove default list styling */
     list-style-type: none;
     padding: 0;
     margin: 0;
     max-height: 10px;
-    display: none;
+    flex:row;
+    display:block;
+  }
+
+  #searchUL li {
+    position: relative;
+    z-index: 100;
   }
   
   #searchUL li a {
@@ -127,7 +135,7 @@ header {
     color: black; 
     display: block; 
     width: 90vw;
-    max-width: 435px;
+    max-width: 285px;
     border-radius: 4px;
   }
   
@@ -148,7 +156,7 @@ header {
         display: block;
     }
 } */
-@media (max-width:1000px){
+@media (max-width:1300px){
     .header-container{
         width: 95%;
     }
@@ -221,9 +229,11 @@ header {
 
 /* Style for footer*/
 footer {
+    box-sizing: border-box;
     background-color: var(--color-navbar);
     color: var(--color-text);
     width: 100%;
+    padding-inline:1%;
 }
 
 .footer-container {
@@ -232,13 +242,15 @@ footer {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .footer-container img {
     justify-self: start;
     align-self: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .copyright {
@@ -291,20 +303,27 @@ footer {
 }
 
 .captionText {
-    padding-left: 10px;
+    padding: 10px;
     float: right;
     width: 50%;
+    
 }
 
 .item:hover {
     background-color: #eeb16b;
 }
 
-.item h3 {
+.item h2 {
     text-align: center;
+    color: white;
+    margin-bottom: 20px;
 }
 
-@media only screen and (max-width: 600px) {
+.item p {
+    color: white;
+}
+
+@media only screen and (max-width: 1000px) {
     
     .item-list {
         width: 100%;
@@ -328,26 +347,41 @@ footer {
 
 #contact_form {
     width:60%;
+    max-width: 450px;
     margin: 0.5rem auto;
     text-align: center;
 }
 
+#contact_form input, #contact_form textarea{
+    width: 100%;
+    padding:0.3rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+#contact_form textarea {
+    min-width: 100%;
+    max-width: 450px;
+}
+
+
 .formline > * {
     box-sizing: border-box;
 }
-#contact_form input{
-    display: inline-block;
-    width:70%;
-    padding:0.3rem;
-    font-size: 1rem;}
 
 #myfile {
-    padding:0 !important;
+    padding:0 !important; 
+    
 }
 #contact_form label{
     display: inline-block;
     text-align: left;
-    width:70%;
+    margin-left: 0px;
+    padding-left: 0px;
+    width:100%;
     font-size: 1rem;}
 
 #message{
@@ -357,29 +391,51 @@ footer {
     font-size: 1rem;
 }
 
-#formbtn {
-    border:none;
-    color:white;
-    background-color: rgb(0, 51, 255);
-    height:3rem;
-    font-size: 2rem;
+#contact_form input[type=submit]{
+    width: 40%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
+
+#contact_form input[type=file] {
+    border: none;
+
+}
+
+#contact_form input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
 .formline{
     padding:1%;
 }
 /* Contact form section*/ 
 
 /* Slideshow */
-.slideshow-container {
-    max-width: 1000px;
+#slideshow-container {
+    width: 100%;
     position: relative;
-    margin: auto;
-  }
+    display: block;
+}
+.slide {
+    width: 100%;
+}
+
+.slideImg {
+    width: 100%;
+    height: auto;
+}
 
 .fade {
     animation-name: fade;
     animation-duration: 3s;
-  }
+}
   
 @keyframes fade {
     from {opacity: .4} 
