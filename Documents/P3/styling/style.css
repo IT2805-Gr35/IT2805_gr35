@@ -94,7 +94,9 @@ header {
 
 .hamburger {
     display: none;
+    z-index: 2;
 }
+
 #searchInput {
     width: 90vw;
     max-width: 250px;
@@ -429,17 +431,13 @@ footer {
 }
 
 #slideshow-container {
-    width: 100%;
     min-height: 100%;
     position: relative;
     display: block;
 }
-.slide {
-    width: 100%;
-}
 
 .slideImg {
-    min-width: 100%;
+    width: 100%;
     min-height: 100%;
 }
 
