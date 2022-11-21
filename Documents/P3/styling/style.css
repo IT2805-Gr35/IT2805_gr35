@@ -68,6 +68,7 @@ header {
     grid-row: 0;
     display: flex;
     justify-content: flex-end;
+    z-index: 1;
 }
 
 .navbar ul {
@@ -578,7 +579,7 @@ footer {
     margin-bottom: 5px;
 }
 
-@media only screen and (max-width: 940px) {
+@media only screen and (max-width: 1300px) {
     .type {
         display: block;
         float: left;
