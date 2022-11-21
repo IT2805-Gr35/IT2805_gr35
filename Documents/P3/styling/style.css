@@ -68,6 +68,7 @@ header {
     grid-row: 0;
     display: flex;
     justify-content: flex-end;
+    z-index: 1;
 }
 
 .navbar ul {
@@ -101,6 +102,7 @@ header {
     padding: 12px 20px 12px 40px; 
     border: 1px solid #ddd; 
     margin: 10px; 
+    margin-bottom: 0px;
     border-radius: 4px;
     /* Add search icon */
     background-image: url("/Documents/P3/images/search_icon.png");
@@ -127,7 +129,8 @@ header {
     /* Style each list element */
     border: 1px solid #ddd; 
     margin: 12px;
-    margin-top: -1px; 
+    margin-top: 0px; 
+    margin-bottom: 0px;
     background-color: #f6f6f6; 
     padding: 12px; 
     text-decoration: none; 
@@ -418,8 +421,15 @@ footer {
 /* Contact form section*/ 
 
 /* Slideshow */
+.info-container {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 #slideshow-container {
     width: 100%;
+    min-height: 100%;
     position: relative;
     display: block;
 }
@@ -428,8 +438,8 @@ footer {
 }
 
 .slideImg {
-    width: 100%;
-    height: auto;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 .fade {
@@ -569,7 +579,7 @@ footer {
     margin-bottom: 5px;
 }
 
-@media only screen and (max-width: 940px) {
+@media only screen and (max-width: 1300px) {
     .type {
         display: block;
         float: left;
