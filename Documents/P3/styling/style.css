@@ -447,7 +447,7 @@ footer {
 
 #NNT-header {
     text-align: center;
-    margin: 50px auto 100px;
+    margin-top: 50px;
     color: white;
     font-size: 50px;
 }
@@ -462,6 +462,7 @@ footer {
     width: 100%;
     min-height: 380px;
     padding: 30px;
+    margin: 8% auto 2%;
     border-radius: 10px;
     bottom: 0;
     text-align: center;
@@ -472,11 +473,13 @@ footer {
 }
 
 .about-logo{
+    /*lager hvit sirkel, border har samme farge som bakgrunn*/
     width: 130px;
     height: 130px;
     border-radius: 50%;
-    border: 10px solid #cb8e46;
+    /*bestemmer posisjon til sirkel*/
     margin: -90px auto 0;
+    border: 10px solid #cb8e46;
     background: white;
 }
 
@@ -495,7 +498,7 @@ footer {
     transition: 0.5s;
 }
 
-
+/*flytter boksen opp*/
 .about-child:hover{
     transform: translateY(-50px);
 }
