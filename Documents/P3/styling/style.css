@@ -338,6 +338,7 @@ footer {
 
 /* Contact form section*/ 
 #contact_main h1{
+    font-size: 50px;
     text-align: center;
     margin:1rem;
 }
