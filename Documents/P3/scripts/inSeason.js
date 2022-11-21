@@ -1,6 +1,5 @@
 
 //finds current month and hides list elements where current month is not in season
-//getMonth() method taken from https://www.freecodecamp.org/news/javascript-get-current-date-todays-date-in-js/
 function pullSeasonIndex() {
     //Gets the current month
     let today = new Date();
